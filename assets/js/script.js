@@ -10,17 +10,19 @@ paperBtn.addEventListener('click', function() { playGame(1); });
 scissorsBtn.addEventListener('click', function() { playGame(2); });
 
 function playGame(userChoice) {
+  let choices = ['Rock', 'Paper', 'Scissors'];
   let pcChoice = Math.floor(Math.random() * 3);
-  
+ 
   if (userChoice === 0 && pcChoice === 2 || 
       userChoice === 1 && pcChoice === 0 || 
       userChoice === 2 && pcChoice === 1) {
     userScore.textContent = parseInt(userScore.textContent) + 1;
-    alert('You win!');
+    alert(`PC Chose : ${choices[pcChoice]} , You win!`);
   } else if (userChoice === pcChoice) {
-    alert('Tie game!');
+    alert(`PC Chose : ${choices[pcChoice]} , Draw Game!`);
   } else {
     pcScore.textContent = parseInt(pcScore.textContent) + 1;
-    alert('You lose!');
+    alert(`PC Chose : ${choices[pcChoice]} , PC wins!`);
   }
 }
+
