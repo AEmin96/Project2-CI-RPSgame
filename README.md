@@ -49,7 +49,7 @@
  
 <h2> Deployment </h2>
 <h3> This site was deployed using GitHub Pages </h3>
-<h3> Link for the website - https://aemin96.github.io/code-institute-project1-krazy-lifehacks/ </h3>
+<h3> Link for the website - https://aemin96.github.io/Project2-CI-RPSgame/ </h3>
 
 <h2> Credits </h2>
 
